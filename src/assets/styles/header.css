@@ -1,0 +1,49 @@
+.hero {
+	background-image: url('../../../public/images/hero.png');
+	width: 1440px;
+	height: 1084px;
+
+	padding: 0 80px;
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+
+	padding-top: 40px;
+}
+
+.header_nav {
+	display: flex;
+	gap: 60px;
+}
+
+.header_link {
+	color: rgb(190, 190, 190);
+	font-size: 18px;
+
+	transition: 0.2s ease all;
+}
+
+.header_link:hover {
+	color: white;
+}
+
+.header_button {
+	background: none;
+	cursor: pointer;
+
+	position: relative;
+}
+
+.cart_badge {
+	position: absolute;
+	top: 0;
+	left: 20px;
+
+	color: white;
+	padding: 4px;
+	font-size: 16px;
+	background-color: #e58411;
+	border-radius: 100%;
+}
