@@ -1,19 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- Подключение стилей-->
-  <link rel="stylesheet" href="./src/assets/styles/global.css">
-  <link rel="stylesheet" href="./src/assets//styles/header.css">
-  <link rel="stylesheet" href="./src/assets//styles/main.css">
-  <link rel="stylesheet" href="./src/assets//styles/footer.css">
-  <link rel="stylesheet" href="./src//assets/fonts/font.css">
+		<!-- Подключение стилей-->
+		<link rel="stylesheet" href="./src/assets/styles/global.css" />
+		<link rel="stylesheet" href="./src/assets/styles/header.css" />
+		<link rel="stylesheet" href="./src/assets/styles/main.css" />
+		<link rel="stylesheet" href="./src/assets/styles/footer.css" />
+		<link rel="stylesheet" href="./src//assets/fonts/font.css" />
 
-  <title>Panto</title>
-</head>
-  <body>
-      
-  </body>
+		<title>Panto</title>
+	</head>
+	<body>
+		<div class="wrapper">
+			<!-- HERO -->
+			<div class="hero">
+				<!-- HEADER -->
+				<header class="header">
+					<img src="/public/images/logo.svg" alt="" />
+					<!-- NAVIGATION -->
+					<nav class="header_nav">
+						<a href="#" class="header_link">Furniture</a>
+						<a href="#" class="header_link">Shop</a>
+						<a href="#" class="header_link">About Us</a>
+						<a href="#" class="header_link">Contact</a>
+					</nav>
+					<!-- CART BUTTON -->
+					<button class="header_button">
+						<img src="./public/icons/bag.svg" alt="" />
+						<span class="cart_badge">0</span>
+					</button>
+				</header>
+
+				<!-- HERO CONTENT -->
+				<div class="hero-content">
+					<h1 class="hero-title">
+						Make Your Interior More Minimalistic & Modern
+					</h1>
+					<h3 class="hero-subtitle">
+						Turn your room with panto into a lot more minimalist<br />
+						and modern with ease and speed
+					</h3>
+					<div class="hero-search">
+						<input type="text" placeholder="Search furniture" />
+						<button>
+							<img src="/public/icons/search.svg" alt="" />
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
 </html>
