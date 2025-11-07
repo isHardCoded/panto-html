@@ -1,0 +1,50 @@
+.main {
+  padding: 120px 80px;
+}
+
+.choosing {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1280px;
+  flex-wrap: wrap;
+
+  h2 {
+    color: #1E1E1E;
+    font-size: 42px;
+  }
+}
+
+.choosing-blocks {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+
+  max-width: 1024px;
+  flex-wrap: wrap;
+}
+
+.choosing-block {
+  max-width: 285px;
+
+  h3 {
+    color: #1E1E1E;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  p {
+    color: #1E1E1E;
+    font-size: 16px;
+    line-height: 185%;
+    margin-bottom: 15px;
+  }
+
+  a {
+    display: flex;
+    align-items: center;
+    color: #E58411;
+    gap: 13px;
+    font-size: 14px;
+  }
+}
