@@ -11,6 +11,13 @@
 		<link rel="stylesheet" href="./src/assets/styles/footer.css" />
 		<link rel="stylesheet" href="./src//assets/fonts/font.css" />
 
+		<!-- Подключение анимаций -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+		/>
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
 		<title>Panto</title>
 	</head>
 	<body>
@@ -18,7 +25,7 @@
 			<!-- HERO -->
 			<div class="hero">
 				<!-- HEADER -->
-				<header class="header">
+				<header class="header animate__animated animate__fadeInDown">
 					<img src="/public/images/logo.svg" alt="" />
 					<!-- NAVIGATION -->
 					<nav class="header_nav">
@@ -36,14 +43,14 @@
 
 				<!-- HERO CONTENT -->
 				<div class="hero-content">
-					<h1 class="hero-title">
+					<h1 class="hero-title animate__animated animate__fadeInUp">
 						Make Your Interior More Minimalistic & Modern
 					</h1>
-					<h3 class="hero-subtitle">
+					<h3 class="hero-subtitle animate__animated animate__fadeInUp">
 						Turn your room with panto into a lot more minimalist<br />
 						and modern with ease and speed
 					</h3>
-					<div class="hero-search">
+					<div class="hero-search animate__animated animate__fadeInUp">
 						<input type="text" placeholder="Search furniture" />
 						<button>
 							<img src="/public/icons/search.svg" alt="" />
@@ -55,30 +62,42 @@
 			<main class="main">
 				<!-- CHOOSING US -->
 				<div class="choosing">
-					<h2>Why<br/> Choosing Us</h2>
+					<h2 data-aos="fade-right">
+						Why<br />
+						Choosing Us
+					</h2>
 					<div class="choosing-blocks">
-						<div class="choosing-block">
+						<div data-aos="fade-up" class="choosing-block">
 							<h3>Luxury facilities</h3>
-							<p>The advantage of hiring a workspace with us is that givees you comfortable service and all-around facilities.</p>
+							<p>
+								The advantage of hiring a workspace with us is that givees you
+								comfortable service and all-around facilities.
+							</p>
 							<a href="#">
 								<span>More Info</span>
-								<img src="./public/images/orange-arrow.svg" alt="">
+								<img src="./public/images/orange-arrow.svg" alt="" />
 							</a>
 						</div>
-						<div class="choosing-block">
+						<div data-aos="fade-up" class="choosing-block">
 							<h3>Luxury facilities</h3>
-							<p>The advantage of hiring a workspace with us is that givees you comfortable service and all-around facilities.</p>
+							<p>
+								The advantage of hiring a workspace with us is that givees you
+								comfortable service and all-around facilities.
+							</p>
 							<a href="#">
 								<span>More Info</span>
-								<img src="./public/images/orange-arrow.svg" alt="">
+								<img src="./public/images/orange-arrow.svg" alt="" />
 							</a>
 						</div>
-						<div class="choosing-block">
+						<div data-aos="fade-up" class="choosing-block">
 							<h3>Luxury facilities</h3>
-							<p>The advantage of hiring a workspace with us is that givees you comfortable service and all-around facilities.</p>
+							<p>
+								The advantage of hiring a workspace with us is that givees you
+								comfortable service and all-around facilities.
+							</p>
 							<a href="#">
 								<span>More Info</span>
-								<img src="./public/images/orange-arrow.svg" alt="">
+								<img src="./public/images/orange-arrow.svg" alt="" />
 							</a>
 						</div>
 					</div>
@@ -97,106 +116,111 @@
 					<!-- PRODUCTS CARDS -->
 					<div class="products-container">
 						<button class="prev">
-							<img src="./public/icons/left-arrow.svg" alt="">
-						</button>	
+							<img src="./public/icons/left-arrow.svg" alt="" />
+						</button>
 						<div class="card">
 							<div class="card-image">
-								<img src="./public/images/chair-4.png" alt="">
+								<img src="./public/images/chair-4.png" alt="" />
 							</div>
 							<div class="card-content">
 								<h4>Chair</h4>
 								<h3>Sakarias Armchair</h3>
 								<div class="card-rating">
-									<img src="./public/icons/star.svg" alt="">
-									<img src="./public/icons/star.svg" alt="">
-									<img src="./public/icons/star.svg" alt="">
-									<img src="./public/icons/star.svg" alt="">
+									<img src="./public/icons/star.svg" alt="" />
+									<img src="./public/icons/star.svg" alt="" />
+									<img src="./public/icons/star.svg" alt="" />
+									<img src="./public/icons/star.svg" alt="" />
 								</div>
 								<div class="card-price">
 									<p><span>$</span>392</p>
 									<button>
-										<img src="./public/icons/plus.svg" alt="">
+										<img src="./public/icons/plus.svg" alt="" />
 									</button>
 								</div>
 							</div>
 						</div>
 						<div class="card">
 							<div class="card-image">
-								<img src="./public/images/chair-1.png" alt="">
+								<img src="./public/images/chair-1.png" alt="" />
 							</div>
 							<div class="card-content">
 								<h4>Chair</h4>
 								<h3>Baltsar Chair</h3>
 								<div class="card-rating">
-									<img src="./public/icons/star.svg" alt="">
-									<img src="./public/icons/star.svg" alt="">
-									<img src="./public/icons/star.svg" alt="">
-									<img src="./public/icons/star.svg" alt="">
-									<img src="./public/icons/star.svg" alt="">
+									<img src="./public/icons/star.svg" alt="" />
+									<img src="./public/icons/star.svg" alt="" />
+									<img src="./public/icons/star.svg" alt="" />
+									<img src="./public/icons/star.svg" alt="" />
+									<img src="./public/icons/star.svg" alt="" />
 								</div>
 								<div class="card-price">
 									<p><span>$</span>299</p>
 									<button>
-										<img src="./public/icons/plus.svg" alt="">
+										<img src="./public/icons/plus.svg" alt="" />
 									</button>
 								</div>
 							</div>
 						</div>
 						<div class="card">
 							<div class="card-image">
-								<img src="./public/images/chair-2.png" alt="">
+								<img src="./public/images/chair-2.png" alt="" />
 							</div>
 							<div class="card-content">
 								<h4>Chair</h4>
 								<h3>Baltsar Chair</h3>
 								<div class="card-rating">
-									<img src="./public/icons/star.svg" alt="">
-									<img src="./public/icons/star.svg" alt="">
-									<img src="./public/icons/star.svg" alt="">
-									<img src="./public/icons/star.svg" alt="">
-									<img src="./public/icons/star.svg" alt="">
+									<img src="./public/icons/star.svg" alt="" />
+									<img src="./public/icons/star.svg" alt="" />
+									<img src="./public/icons/star.svg" alt="" />
+									<img src="./public/icons/star.svg" alt="" />
+									<img src="./public/icons/star.svg" alt="" />
 								</div>
 								<div class="card-price">
 									<p><span>$</span>519</p>
 									<button>
-										<img src="./public/icons/plus.svg" alt="">
+										<img src="./public/icons/plus.svg" alt="" />
 									</button>
 								</div>
 							</div>
 						</div>
 						<div class="card">
 							<div class="card-image">
-								<img src="./public/images/chair-3.png" alt="">
+								<img src="./public/images/chair-3.png" alt="" />
 							</div>
 							<div class="card-content">
 								<h4>Chair</h4>
 								<h3>Baltsar Chair</h3>
 								<div class="card-rating">
-									<img src="./public/icons/star.svg" alt="">
-									<img src="./public/icons/star.svg" alt="">
-									<img src="./public/icons/star.svg" alt="">
-									<img src="./public/icons/star.svg" alt="">
-									<img src="./public/icons/star.svg" alt="">
+									<img src="./public/icons/star.svg" alt="" />
+									<img src="./public/icons/star.svg" alt="" />
+									<img src="./public/icons/star.svg" alt="" />
+									<img src="./public/icons/star.svg" alt="" />
+									<img src="./public/icons/star.svg" alt="" />
 								</div>
 								<div class="card-price">
 									<p><span>$</span>299</p>
 									<button>
-										<img src="./public/icons/plus.svg" alt="">
+										<img src="./public/icons/plus.svg" alt="" />
 									</button>
 								</div>
 							</div>
 						</div>
 						<button class="next">
-							<img src="./public/icons/right-arrow.svg" alt="">
+							<img src="./public/icons/right-arrow.svg" alt="" />
 						</button>
 					</div>
 					<!-- LINK -->
 					<a href="#">
 						<span>View All</span>
-						<img src="./public/images/orange-arrow.svg" alt="">
+						<img src="./public/images/orange-arrow.svg" alt="" />
 					</a>
 				</div>
 			</main>
 		</div>
+
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<script>
+			AOS.init()
+		</script>
 	</body>
 </html>
