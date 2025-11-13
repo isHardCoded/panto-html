@@ -18,3 +18,27 @@ button {
 	max-width: 1440px;
 	margin: 0 auto;
 }
+
+.toast {
+	position: fixed;
+	top: -50px;
+	left: 43.5%;
+
+	background-color: #171717;
+	padding: 10px 20px;
+	border-radius: 6px;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	transition: top 0.25s ease;
+
+	p {
+		color: white;
+	}
+}
+
+.toast.show {
+	top: 50px;
+}

@@ -15,8 +15,19 @@ let products = [
 	},
 ]
 
+function showToast() {
+	let toast = document.getElementById('toast')
+
+	toast.classList.add('show')
+
+	setTimeout(() => {
+		toast.classList.remove('show')
+	}, 2000)
+}
+
 function addToCart(name) {
 	console.log(`Товар ${name} добавлен в корзину`)
+	showToast()
 }
 
 products.forEach(product => {
