@@ -15,6 +15,25 @@ let products = [
 	},
 ]
 
+let categories = [
+	{
+		id: 1,
+		name: 'Chair',
+	},
+	{
+		id: 2,
+		name: 'Beds',
+	},
+	{
+		id: 3,
+		name: 'Sofa',
+	},
+	{
+		id: 4,
+		name: 'Lamp',
+	},
+]
+
 function showToast() {
 	let toast = document.getElementById('toast')
 
@@ -30,11 +49,12 @@ function addToCart(name) {
 	showToast()
 }
 
-products.forEach(product => {
-	let card = document.createElement('div')
-	card.classList.add('card')
+function showProducts() {
+	products.forEach(product => {
+		let card = document.createElement('div')
+		card.classList.add('card')
 
-	card.innerHTML = `
+		card.innerHTML = `
     <div class="card-image">
 		<img src="${product.imageUrl}" alt="" />
 	</div>
@@ -57,5 +77,29 @@ products.forEach(product => {
 	</div>
     `
 
-	document.querySelector('.products-container').appendChild(card)
+		document.querySelector('.products-container').appendChild(card)
+	})
+}
+
+const buttons = categories.map((category, index) => {
+	let button = document.createElement('button')
+	button.classList.add('filter')
+	button.textContent = category.name
+
+	if (index === 0) button.classList.add('active-filter')
+
+	button.addEventListener('click', () => setActive(index))
+	return button
 })
+
+function setActive(activeIndex) {
+	buttons.forEach((button, index) => {
+		button.classList.toggle('active-filter', index === activeIndex)
+	})
+}
+
+showProducts()
+
+buttons.forEach(button =>
+	document.querySelector('.products-filter').appendChild(button)
+)

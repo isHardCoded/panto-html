@@ -79,7 +79,7 @@
 	background: none;
 }
 
-.active-filter {
+.filter.active-filter {
 	background-color: white;
 }
 
