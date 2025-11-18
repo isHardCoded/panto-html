@@ -83,5 +83,8 @@ export function HomePage() {
 					</a>
 				</div>
 			</main>
+		<div id="toast" class="toast">
+			<p>Product added to cart</p>
+		</div>
         `
 }
