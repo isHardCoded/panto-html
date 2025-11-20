@@ -1,9 +1,9 @@
 import { ProductList } from './components/product/list'
 import { HomePage } from './pages/home/index'
 import { showToast } from './components/toast/index'
+import { CategoriesList } from './components/categories/list'
 
 import Aos from 'aos'
-import { CategoriesList } from './components/categories/list'
 
 Aos.init()
 
@@ -12,15 +12,17 @@ document.querySelector('#app').innerHTML = `
   ${HomePage()}
 </div>
 `
-function setActive(activeIndex) {
-	CategoriesList().forEach((button, index) => {
-		button.classList.toggle('active-filter', index === activeIndex)
-	})
-}
 
-CategoriesList(setActive).forEach(button =>
-	document.querySelector('.products-filter').appendChild(button)
-)
+const buttons = CategoriesList(setActive);
+const container = document.querySelector('.products-filter');
+buttons.forEach(button => container.appendChild(button));
+
+function setActive(activeIndex) {
+    const buttonsInDom = container.querySelectorAll('button.filter');
+    buttonsInDom.forEach((button, index) => {
+        button.classList.toggle('active-filter', index === activeIndex);
+    });
+}
 
 window.addToCart = function (name) {
 	console.log(`Товар ${name} добавлен в корзину`)

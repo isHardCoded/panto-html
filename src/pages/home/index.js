@@ -10,7 +10,7 @@ export function HomePage() {
 			<h1 class="hero-title animate__animated animate__fadeInUp">
 				Make Your Interior More Minimalistic & Modern
 			</h1>
-			<h3 class="hero-subtitle" animate__animated animate__fadeInUp">
+			<h3 class="hero-subtitle animate__animated animate__fadeInUp">
 				Turn your room with panto into lot more minimalist<br />
 				and modern with ease and speed
 			</h3>
